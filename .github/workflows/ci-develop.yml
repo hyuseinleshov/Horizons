@@ -1,4 +1,4 @@
-name: CI Develop - Build and run Unit Tests
+name: CI Develop - Build and Run Unit Tests
 
 on:
   push:
@@ -25,4 +25,4 @@ jobs:
         run: dotnet build --no-restore --configuration Release
 
       - name: Run Unit Tests
-        run: dotnet test Horizons.Tests.Unit.csproj/Horizons.Tests.Unit.csproj --no-build --configuration Release --verbosity normal
+        run: dotnet test Horizons.Tests.Unit/Horizons.Tests.Unit.csproj --no-build --configuration Release --verbosity normal
